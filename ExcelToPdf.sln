@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelToPdf", "ExcelToPdf\ExcelToPdf.csproj", "{8967E64C-BA84-48C4-B3DB-8B3F20A40CA8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8967E64C-BA84-48C4-B3DB-8B3F20A40CA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8967E64C-BA84-48C4-B3DB-8B3F20A40CA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8967E64C-BA84-48C4-B3DB-8B3F20A40CA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8967E64C-BA84-48C4-B3DB-8B3F20A40CA8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EA140D5C-EA97-4A6A-905B-D4DAB75D550F}
+	EndGlobalSection
+EndGlobal
