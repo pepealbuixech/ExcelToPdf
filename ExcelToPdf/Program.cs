@@ -9,7 +9,7 @@ namespace ExcelToPdf
         static void Main(string[] args)
         {
             var app = new Application();
-
+            var rewrite = args.Any(arg => arg == "--rewrite" || arg == "-rwt");
             var path = Directory.GetCurrentDirectory();
             var files = Directory.GetFiles(path);
 
@@ -17,11 +17,14 @@ namespace ExcelToPdf
             {
                 var workbook = app.Workbooks.Open(file);
                 var pdfName = file.Replace(".xlsx", ".pdf");
-                if (!Directory.Exists(pdfName))
+
+                if (rewrite || !Directory.Exists(pdfName))
                 {
                     workbook.ExportAsFixedFormat(XlFixedFormatType.xlTypePDF, pdfName);
                 }
             }
+
+            app.Quit();
         }
     }
 }
