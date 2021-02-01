@@ -32,7 +32,7 @@ namespace ExcelToPdf
         private static void Convert(string path, bool rewrite)
         {
             var files = Directory.GetFiles(path);
-            var app = new Application();
+            var application = new Application();
             try
             {
                 foreach (var file in files.Where(file => file.EndsWith(".xlsx")))
@@ -41,7 +41,7 @@ namespace ExcelToPdf
 
                     if (rewrite || !File.Exists(pdfName))
                     {
-                        var workbook = app.Workbooks.Open(file);
+                        var workbook = application.Workbooks.Open(file);
                         workbook.ExportAsFixedFormat(XlFixedFormatType.xlTypePDF, pdfName);
                         workbook.Close();
                     }
@@ -49,7 +49,7 @@ namespace ExcelToPdf
             }
             finally
             {
-                app.Quit();
+                application.Quit();
             }
         }
 
